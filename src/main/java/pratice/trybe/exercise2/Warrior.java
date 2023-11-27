@@ -1,6 +1,6 @@
 package pratice.trybe.exercise2;
 
-public class Warrior extends PlayabeCharacter {
+public class Warrior extends PlayableCharacter {
     private String weapon;
     public String getWeapon() {
         return weapon;

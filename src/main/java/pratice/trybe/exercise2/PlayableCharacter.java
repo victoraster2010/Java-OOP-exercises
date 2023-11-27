@@ -1,6 +1,6 @@
 package pratice.trybe.exercise2;
 
-public class PlayabeCharacter {
+public class PlayableCharacter {
     private String name;
     private String race;
 
@@ -19,5 +19,8 @@ public class PlayabeCharacter {
     }
     public String getInfo(){
         return "Nome: " + this.name + ", Raça: " + this.race;
+    }
+    public void move() {
+        System.out.println("O personagem se move");
     }
 }

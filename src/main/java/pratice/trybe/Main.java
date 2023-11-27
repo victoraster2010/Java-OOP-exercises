@@ -1,5 +1,7 @@
 package pratice.trybe;
 
+import pratice.trybe.exercise2.Barbarian;
+import pratice.trybe.exercise2.Cleric;
 import pratice.trybe.exercise2.Warrior;
 
 public class Main {
@@ -12,10 +14,11 @@ public class Main {
         // System.out.println(porsche911.exibirInformacoes());
         // System.out.println(Car.quantidadeDeCarros());
         //exercicio 2 abaixo cria classes que herdam de uma classe pai implementando herança
-        Warrior conan = new Warrior();
-        conan.setName("Conan");
-        conan.setRace("human");
-        conan.setWeapon("sword");
-        System.out.println(conan.getInfo());
+        Cleric jeanneDarc = new Cleric();
+        jeanneDarc.heal();
+        //exemplo de overload o mesmo metodo com um parametro tem implementação diferente
+        jeanneDarc.heal("Poção suco de laranja");
+        jeanneDarc.heal("Milagre da santa", 50);
+        jeanneDarc.heal(25);
     }
 }
